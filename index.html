@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agastya Munnangi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">AM</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Agastya<br />Munnangi</h1>
+      <div class="hero-tagline">
+        <span class="typed-prefix">I build&nbsp;</span>
+        <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span>
+      </div>
+      <p class="hero-sub">
+        Computational Biology Researcher &middot; AI Founder &middot; Lambert High School, Class of 2028
+      </p>
+      <div class="hero-actions">
+        <a href="#research" class="btn btn-primary">View My Work</a>
+        <a href="mailto:agastyamunnangi@gmail.com" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/Agastya191" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/agastya-munnangi" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://iddu.app" target="_blank" rel="noopener" aria-label="Iddu App">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title">Bridging Biology,<br />AI, and Real Impact</h2>
+          <p>I'm a rising junior at Lambert High School in Suwanee, GA — building AI products, doing computational biology research, and competing at the state level in healthcare and business competitions.</p>
+          <p>From training ML models for cancer therapy prediction at Harvard-tested research platforms to founding Iddu AI — an autonomous AI wellness scheduling app currently in Apple TestFlight — I work at the intersection of biology and artificial intelligence to solve real healthcare problems.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">4.0</span>
+              <span class="stat-label">Unweighted GPA</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">1530</span>
+              <span class="stat-label">SAT Score</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">110+</span>
+              <span class="stat-label">Tutoring Hours</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">$10K+</span>
+              <span class="stat-label">Startup Funding</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards reveal delay-1">
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div>
+              <strong>Lambert High School</strong>
+              <span>Suwanee, GA · Class of 2028</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v11m0 0H5m4 0h10m0-11v11m0 0H15"/></svg>
+            </div>
+            <div>
+              <strong>University of Miami</strong>
+              <span>Computational Genetics Intern</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
+            </div>
+            <div>
+              <strong>Immunova AI</strong>
+              <span>ML Researcher · Cancer Therapy Models</span>
+            </div>
+          </div>
+          <div class="info-card highlight-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <div>
+              <strong>Iddu AI</strong>
+              <span>Founder · Apple TestFlight Beta</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH & EXPERIENCE -->
+  <section id="research" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Experience</div>
+        <h2 class="section-title">Research &amp; Work</h2>
+        <p class="section-desc">From single-cell RNA sequencing to clinical ML platforms, I work on problems at the frontier of computational biology and AI.</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2026 – Present</div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div class="tc-org">University of Miami</div>
+              <div class="tc-role">Computational Genetics Research Intern</div>
+            </div>
+            <ul class="tc-bullets">
+              <li>Analyze single-cell RNA-sequencing datasets in Python to investigate cellular mechanisms underlying rare genetic diseases including Tay-Sachs, under direct faculty mentorship</li>
+              <li>Apply machine learning and statistical modeling to identify disease-specific expression patterns across patient cohorts, accelerating hypothesis generation for downstream wet-lab validation</li>
+            </ul>
+            <div class="tc-tags">
+              <span>scRNA-Seq</span><span>Python</span><span>Machine Learning</span><span>Computational Biology</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025 – Present</div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div class="tc-org">Immunova AI</div>
+              <div class="tc-role">ML Researcher &amp; Developer</div>
+            </div>
+            <ul class="tc-bullets">
+              <li>Architect and train ML survival and prognosis models to predict patient response to cancer therapies, contributing to a beta platform actively tested at institutions including Harvard Medical School</li>
+              <li>Collaborate cross-functionally to refine model accuracy, validate clinical predictions, and iterate on pipeline design in a fast-moving early-stage environment</li>
+              <li>Project has secured <strong>$10,000+</strong> in early-stage funding and is progressing toward broader clinical deployment</li>
+            </ul>
+            <div class="tc-tags">
+              <span>Survival Analysis</span><span>Prognosis Modeling</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025 – Present</div>
+          <div class="timeline-card entrepreneur-card">
+            <div class="tc-header">
+              <div class="tc-org">
+                Iddu AI
+                <a href="https://iddu.app" target="_blank" rel="noopener" class="org-link">iddu.app ↗</a>
+              </div>
+              <div class="tc-role">Founder &amp; Lead Developer</div>
+              <span class="badge">Apple TestFlight Beta</span>
+            </div>
+            <ul class="tc-bullets">
+              <li>Founded and independently built an AI-powered Wellness Assistant that autonomously contacts wellness offices via phone to schedule, reschedule, and cancel appointments on behalf of users</li>
+              <li>Engineered the system to navigate complex automated phone trees and IVR systems, reducing patient friction and improving access to mental health and wellness services</li>
+              <li>Designed an end-to-end AI workflow integrating voice automation, NLP, and scheduling logic into a native mobile application</li>
+            </ul>
+            <div class="tc-tags">
+              <span>Voice AI</span><span>LLM API</span><span>NLP</span><span>iOS</span><span>Healthcare Automation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025 – Present</div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div class="tc-org">MealsByGrace Club</div>
+              <div class="tc-role">Co-Founder</div>
+            </div>
+            <ul class="tc-bullets">
+              <li>Co-founded a student-led service organization partnering with MealsByGrace Non-profit to address food insecurity across the North Atlanta area</li>
+              <li>Scaled membership to <strong>150+ students</strong> and raised <strong>$3,000</strong> in community funding within the first year</li>
+              <li>Organized <strong>13 recurring</strong> volunteer and community outreach initiatives across 2025–2026</li>
+            </ul>
+            <div class="tc-tags">
+              <span>Leadership</span><span>Community Service</span><span>Nonprofit</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Research</div>
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="section-desc">Published and presented research at competitive national symposia.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <div class="project-year">2025</div>
+          <h3>Microparticles as Biomarkers for Blood Coagulation in Cancer</h3>
+          <p>Conducted a comparative analysis of novel microparticle-based biomarkers versus established coagulation markers in oncology contexts. Presented at the IJSCAR Symposium through a competitive selection process.</p>
+          <div class="project-footer">
+            <span class="project-venue">IJSCAR Symposium</span>
+            <span class="project-status">Presented</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-1">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v11m0 0H5m4 0h10m0-11v11m0 0H15"/><path d="M3 20l4-4 4 4 4-4 4 4"/></svg>
+          </div>
+          <div class="project-year">2025</div>
+          <h3>A Framework for Auditing the Consequences of CRISPR</h3>
+          <p>Led a three-member interdisciplinary research team examining ethical, societal, and regulatory risks of CRISPR gene-editing technologies. Produced a structured audit framework applicable to emerging biotechnology governance and public policy.</p>
+          <div class="project-footer">
+            <span class="project-venue">Youth Tech &amp; Ethics Institute</span>
+            <span class="project-status">Published</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Technical Skills</div>
+        <h2 class="section-title">What I Work With</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h4 class="skill-group-title">Languages &amp; Tools</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal delay-1">
+          <h4 class="skill-group-title">AI / ML</h4>
+          <div class="skill-tags">
+            <span class="skill-tag accent">Scikit-learn</span>
+            <span class="skill-tag accent">Pandas</span>
+            <span class="skill-tag accent">NumPy</span>
+            <span class="skill-tag accent">Survival Analysis</span>
+            <span class="skill-tag accent">Prognosis Modeling</span>
+            <span class="skill-tag accent">scRNA-Seq Analysis</span>
+            <span class="skill-tag accent">LLM API Integration</span>
+            <span class="skill-tag accent">Voice AI Automation</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal delay-2">
+          <h4 class="skill-group-title">Domains</h4>
+          <div class="skill-tags">
+            <span class="skill-tag purple">Computational Biology</span>
+            <span class="skill-tag purple">Cancer Research</span>
+            <span class="skill-tag purple">Clinical AI</span>
+            <span class="skill-tag purple">Healthcare Automation</span>
+            <span class="skill-tag purple">End-to-End AI Product Development</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Recognition</div>
+        <h2 class="section-title">Awards &amp; Distinctions</h2>
+      </div>
+
+      <div class="awards-grid">
+
+        <div class="award-card reveal">
+          <div class="award-rank">Top 3</div>
+          <div class="award-body">
+            <strong>HOSA State Conference 2026</strong>
+            <span>Medical Law &amp; Ethics</span>
+            <span class="award-note">Qualified for International Conference · Indianapolis, June 2026</span>
+          </div>
+        </div>
+
+        <div class="award-card reveal delay-1">
+          <div class="award-rank">Top 7</div>
+          <div class="award-body">
+            <strong>HOSA State Leadership Conference</strong>
+            <span>Public Health Competition</span>
+          </div>
+        </div>
+
+        <div class="award-card reveal delay-2">
+          <div class="award-rank">Top 5</div>
+          <div class="award-body">
+            <strong>DECA State Conference 2025</strong>
+            <span>Sports &amp; Entertainment Marketing</span>
+            <span class="award-note">Qualified for ICDC</span>
+          </div>
+        </div>
+
+        <div class="award-card reveal delay-3">
+          <div class="award-rank">~Top 25%</div>
+          <div class="award-body">
+            <strong>IJSCAR Symposium</strong>
+            <span>Selected to Present Cancer Biomarker Research</span>
+            <span class="award-note">Competitive applicant selection</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Service -->
+      <div class="service-section reveal">
+        <h3 class="service-title">Service &amp; Mentorship</h3>
+        <div class="service-grid">
+          <div class="service-item">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div>
+              <strong>Learn To Be — Nonprofit Tutor</strong>
+              <p>110+ hours · 6 students · foundational literacy &amp; numeracy gains</p>
+              <span class="service-date">2024 – Present</span>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+            </div>
+            <div>
+              <strong>Schoolhouse.world — SAT Math Tutor</strong>
+              <p>24+ hour-long sessions · students from diverse global backgrounds</p>
+              <span class="service-date">2024 – Present</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="contact-desc">I'm always open to research collaborations, internship opportunities, or just a conversation about AI and biotech.</p>
+        <div class="contact-links">
+          <a href="mailto:agastyamunnangi@gmail.com" class="contact-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            agastyamunnangi@gmail.com
+          </a>
+          <a href="https://github.com/Agastya191" target="_blank" rel="noopener" class="contact-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            GitHub
+          </a>
+          <a href="https://iddu.app" target="_blank" rel="noopener" class="contact-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            iddu.app
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Agastya Munnangi &middot; Suwanee, GA</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
