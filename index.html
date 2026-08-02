@@ -154,15 +154,17 @@
           <div class="timeline-date">2026 – Present</div>
           <div class="timeline-card">
             <div class="tc-header">
-              <div class="tc-org">University of Miami</div>
-              <div class="tc-role">Computational Genetics Research Intern</div>
+              <div class="tc-org">MIT Critical Data</div>
+              <div class="tc-role">Machine Learning Research Intern</div>
             </div>
             <ul class="tc-bullets">
-              <li>Analyze single-cell RNA-sequencing datasets in Python to investigate cellular mechanisms underlying rare genetic diseases including Tay-Sachs, under direct faculty mentorship</li>
-              <li>Apply machine learning and statistical modeling to identify disease-specific expression patterns across patient cohorts, accelerating hypothesis generation for downstream wet-lab validation</li>
+              <li>Investigate whether multi-agent LLM committees for clinical decision support can be gamed by shortcut cues — signals a benchmark rewards but a clinician would ignore — across <strong>seven cohorts on six public datasets</strong> spanning text (MedQA-USMLE, MedMCQA, MIMIC-CXR), imaging (NIH ChestX-ray14, MIMIC-CXR-JPG, CheXpert), and tabular ICU records (SUPPORT2)</li>
+              <li>Show that agents resist isolated cues (5–16% answer flips) but that socially plausible shortcuts spread: two peers asserting the same wrong answer, or a false "pre-screen" system flag, flip the holdout agent in <strong>38%</strong> of cases across both capability tiers</li>
+              <li>Benchmark three oversight designs — a gate (100% false-positive rate), a same-lineage transcript judge (100% precision, 93% recall on text but collapsing on imaging), and a referee that privately re-queries the holdout (77–88% precision, 13–21% false-positive rate) — establishing that only independent re-querying transfers across modalities</li>
+              <li>Demonstrate that rubric gaming is near-silent in self-report: only 1/10 text and 1/134 imaging drifters name the rubric they moved toward</li>
             </ul>
             <div class="tc-tags">
-              <span>scRNA-Seq</span><span>Python</span><span>Machine Learning</span><span>Computational Biology</span>
+              <span>LLM Agents</span><span>Multi-Agent Systems</span><span>Clinical AI</span><span>Python</span><span>Benchmark Evaluation</span>
             </div>
           </div>
         </div>
@@ -172,16 +174,14 @@
           <div class="timeline-date">2025 – Present</div>
           <div class="timeline-card">
             <div class="tc-header">
-              <div class="tc-org">Immunova AI</div>
-              <div class="tc-role">ML Researcher &amp; Developer</div>
+              <div class="tc-org">Georgia College &amp; State University</div>
+              <div class="tc-role">Computational Biology Research Intern</div>
             </div>
             <ul class="tc-bullets">
-              <li>Architect and train ML survival and prognosis models to predict patient response to cancer therapies, contributing to a beta platform actively tested at institutions including Harvard Medical School</li>
-              <li>Collaborate cross-functionally to refine model accuracy, validate clinical predictions, and iterate on pipeline design in a fast-moving early-stage environment</li>
-              <li>Project has secured <strong>$10,000+</strong> in early-stage funding and is progressing toward broader clinical deployment</li>
+              <li>Apply machine learning and statistical modeling to identify waterborne pathogens and virulence</li>
             </ul>
             <div class="tc-tags">
-              <span>Survival Analysis</span><span>Prognosis Modeling</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span>
+              <span>Machine Learning</span><span>Statistical Modeling</span><span>Python</span><span>Computational Biology</span>
             </div>
           </div>
         </div>
@@ -245,6 +245,19 @@
 
         <div class="project-card reveal">
           <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="4" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M12 6v5M12 11l-5.5 5.5M12 11l5.5 5.5M7 18h10"/></svg>
+          </div>
+          <div class="project-year">2026</div>
+          <h3>Shortcut Contagion in Multi-Agent Clinical LLM Committees</h3>
+          <p>Testing whether committees of language-model agents deliberating on a shared workspace for clinical decision support can be gamed by shortcuts — cues a benchmark rewards but a clinician would ignore. Across seven cohorts on six public datasets spanning text, chest imaging, and tabular ICU records, agents resist cues in isolation (5–16% flips), but socially plausible shortcuts spread: two peers asserting the same wrong answer, or a false "pre-screen" system flag, flip the holdout agent 38% of the time. Comparing three oversight designs shows a gate cannot separate adoption from honest agreement, a transcript-reading judge works on text but collapses on imaging, and only a referee that privately re-queries the holdout transfers across modalities — because the drift is near-silent in self-report.</p>
+          <div class="project-footer">
+            <span class="project-venue">MIT Critical Data</span>
+            <span class="project-status">In Progress</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-1">
+          <div class="project-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3"/><circle cx="12" cy="12" r="9"/></svg>
           </div>
           <div class="project-year">2025</div>
@@ -256,7 +269,7 @@
           </div>
         </div>
 
-        <div class="project-card reveal delay-1">
+        <div class="project-card reveal delay-2">
           <div class="project-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v11m0 0H5m4 0h10m0-11v11m0 0H15"/><path d="M3 20l4-4 4 4 4-4 4 4"/></svg>
           </div>
